@@ -36,7 +36,7 @@ int main(){
         }
 
         if (total_belanja_input < 200000){
-        printf ("\nPotongan harga yang anda peroleh   : Rp. %d", total_belanja_input * 1);
+        printf ("\nPotongan harga yang anda peroleh   : Rp. %d", total_belanja_input * 0);
         }
         else if (total_belanja_input >= 200000 && total_belanja_input <= 500000){
         printf ("\nPotongan harga yang anda peroleh   : Rp. %d", total_belanja_input * 10 / 100);
