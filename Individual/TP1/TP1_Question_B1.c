@@ -11,10 +11,10 @@ int main(){
     hasil_cm = km_input * 100000;
     
     getchar ();
-    printf ("%d = %d m", km_input, hasil_m);
+    printf ("%d Km = %d m", km_input, hasil_m);
 
     getchar ();
-    printf ("%d = %d cm", km_input, hasil_cm);
+    printf ("%d Km = %d cm", km_input, hasil_cm);
     
     return 0;
 }
