@@ -14,7 +14,7 @@ int main(){
     printf ("%d Km = %d m", km_input, hasil_m);
 
     getchar ();
-    printf ("%d Km = %d cm", km_input, hasil_cm);
+    printf ("%d Km = %d Cm", km_input, hasil_cm);
     
     return 0;
 }
