@@ -32,7 +32,7 @@ int main (){
         printf ("Selamat datang di program perhitungan game online.");
         printf ("\n\nMasukkan berapa lama anda ingin bermain (jam)  : ");
 
-        if (scanf ("%d", &jam) == 1){    
+        if (scanf ("%d", &jam) == 1){       //Periksa input jam berupa integer atau bukan    
             if (jam > 0){
                 int harga = perhitungan (jam, harga);       //Function untuk menghitung harga digunakan       
 
@@ -62,7 +62,7 @@ int main (){
 
         } while (play_again != 'y' && play_again != 'Y' && play_again != 'n' && play_again != 'N');     //Looping untuk mengulang "Ingin bermain?"
 
-        system("cls");      //Digunakan untuk clear screan
+        system ("cls");      //Digunakan untuk clear screan
 
     } while (play_again == 'y' || play_again == 'Y');
 
