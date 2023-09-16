@@ -117,6 +117,8 @@ int main (){
 
     } while (i < m);
 
+    //error check
+
     i = 0;
     
     for (i = 0; i < m; i++){
