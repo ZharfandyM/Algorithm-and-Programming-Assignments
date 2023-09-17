@@ -70,7 +70,7 @@ int main (){
     struct Mahasiswa s[50];
     bool parsed_correct = true;
     
-    //system ("cls");     //untuk clear screen
+    system ("cls");     //untuk clear screen
     printf ("Selamat datang di program perhitungan nilai.");
     
     do {    
