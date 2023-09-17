@@ -21,24 +21,24 @@ struct Mahasiswa{       //struct data untuk menyimpan data-data mahasiswa
 bool parse_m (char *string, int *m){        //function untuk error check input jumlah mahasiswa
     int i = 0;                      
 
-    while (isspace(string[i])) 
+    while (isspace(string[i]))      
         i++;
 
     int length = strlen (string);
 
-    if (length == 1){
+    if (length == i){
         return false;
     }
 
     char integer_buffer[BUFFER_SIZE];
     int integer_chars = 0;
 
-    if (string[i] == '-'){
+    if (string[i] == '-'){      //memeriksa jika jumlah mahasiswa negatif, return false
         return false;
     }
 
     while (i < length && !isspace(string[i])){
-        if (!isdigit(string[i])){
+        if (!isdigit(string[i])){               //memeriksa jika input bukan integer, return false
             return false;
         }
 
@@ -58,7 +58,7 @@ bool parse_m (char *string, int *m){        //function untuk error check input j
 
     *m = atoi (integer_buffer);
 
-    if (*m < 10){
+    if (*m < 10){       //memeriksa jika jumlah mahasiswa dibawah 10, return false
         return false;
     }
 
