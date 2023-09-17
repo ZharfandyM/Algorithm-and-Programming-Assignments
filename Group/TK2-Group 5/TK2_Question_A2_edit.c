@@ -38,7 +38,7 @@ bool parse_m (char *string, int *m){        //function untuk error check input j
     }
 
     while (i < length && !isspace(string[i])){
-        if (!isdigit(string[i])){               //memeriksa jika input bukan integer, return false
+        if (!isdigit(string[i])){               //memeriksa jika input character berikutnya bukan integer, return false
             return false;
         }
 
@@ -70,7 +70,7 @@ int main (){
     struct Mahasiswa s[50];
     bool parsed_correct = true;
     
-    system ("cls");     //untuk clear screen
+    //system ("cls");     //untuk clear screen
     printf ("Selamat datang di program perhitungan nilai.");
     
     do {    
