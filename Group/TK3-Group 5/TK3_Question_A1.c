@@ -63,8 +63,11 @@ int main (){
 
             parsed_correct = parse_int (buffer, &total_pembelian);      //calling the error check funtion
 
-            if (!parsed_correct) printf ("\nInput salah.\n");       //if the input is incorrect, print "Input salah."
-
+            if (!parsed_correct) {
+                printf ("\nEror, input salah.\n");       //if the input is incorrect, print "Input salah."
+                printf ("\n(Press Enter to re-enter)");
+            }
+            
         } while (!parsed_correct);          //if the input is incorrect, repeat the statements
 
         if (total_pembelian >= 100000){

@@ -160,8 +160,11 @@ int main (){
 
             parsed_correct = parse_int (buffer, &p.nip);      //calling the error check funtion
 
-            if (!parsed_correct) printf ("\nEror, input salah.\n");       //if the input is incorrect, print "Input salah."
-
+            if (!parsed_correct) {
+                printf ("\nEror, input salah.\n");       //if the input is incorrect, print "Input salah."
+                printf ("\n(Press Enter to re-enter)");
+            }
+            
         } while (!parsed_correct); 
 
         do {
@@ -184,7 +187,10 @@ int main (){
 
             parsed_correct = parse_int (buffer, &p.jam_lembur);      //calling the error check funtion
 
-            if (!parsed_correct) printf ("\nEror, input salah.\n");       //if the input is incorrect, print "Input salah."
+            if (!parsed_correct) {
+                printf ("\nEror, input salah.\n");       //if the input is incorrect, print "Input salah."
+                printf ("\n(Press Enter to re-enter)");
+            }
 
         } while (!parsed_correct); 
 
