@@ -222,7 +222,7 @@ int main (){
 
         } while (repeat != 'Y' && repeat != 'y' && repeat != 'N' && repeat != 'n');     //if the input is neither of (Y,y,N,n) repeat the asking statement
     
-    } while (repeat == 'Y' || repeat == 'y');           //if the user input either one of (Y,y) repeat the program      
+    } while (repeat == 'Y' || repeat == 'y');          //if the user input either one of (Y,y) repeat the program      
 
     printf ("\n\nTerima kasih.");  
 
