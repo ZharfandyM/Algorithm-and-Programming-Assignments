@@ -50,7 +50,7 @@ int main (){
     
     FILE *filedb, *filedp, *tempdp, *tempdb;           //db means data buku, dp means data pembelian, temp variable is used for the deleting line menu
     
-    system ("cls");
+    system ("cls");         //system ("cls") is used to clear the terminal
     do {
         filedb = fopen ("databuku.txt", "r");           //open the file "databuku.txt" in reading mode
 
