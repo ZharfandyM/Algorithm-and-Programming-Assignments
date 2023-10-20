@@ -94,7 +94,7 @@ int main (){
                 fclose (filedb);            //close the file
     
                 do {
-                    printf ("\n\nApakah anda ingin menghitung lagi? (Y/N)  : ");           //asking if the user wants to repeat the program                 
+                    printf ("\n\nApakah anda ingin menginput lagi? (Y/N)  : ");           //asking if the user wants to repeat the program                 
                     scanf (" %c", &repeat);
                         
                     if (repeat != 'Y' && repeat != 'y' && repeat != 'N' && repeat != 'n'){      //if the input is neither of (Y,y,N,n) the input is incorrect
